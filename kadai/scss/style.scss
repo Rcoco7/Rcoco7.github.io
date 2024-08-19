@@ -1,0 +1,104 @@
+//パーシャルファイルを呼び出す
+@use"reset";
+
+//スムーススクロール
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    display: flex;
+}
+header{
+    width: 25%;
+    height: 100vh;
+    background-color: #c0f5e3;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    >h1{
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+}
+
+//ナビゲーション
+#g-nav{
+    padding: 20px;
+    li{
+        margin-bottom: 20px;
+        >a{
+            color: #111;
+            padding: 4px 10px;
+        }
+        &.current>a{
+            background-color: #111;
+            color: #fff;
+        }
+    }
+}
+
+
+main{
+    width: 75%;
+    background-color: #d3b0b7;
+}
+//セクション共通
+.kadai-section{
+    min-height: 100vh;
+    padding: 80px 20px;
+    >h2{
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 40px;
+        &::after{
+            display: block;
+            content: attr(data-en);
+            font-size: 26px;
+            font-weight: normal;
+
+        }
+    }
+}
+
+//メインビジュアル
+.main-visual{
+    width: 100%;
+    height: 75vh;
+    >img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+//メインコピー
+.main-copy{
+    padding: 50px 20px;
+    text-align: center;
+    >h2{
+        margin-bottom: 40px;
+    }
+    >.lead{
+        max-width: 600px;
+        font-size: 18px;
+        margin: 0 auto 50px;
+    }
+}
+
+//課題のリスト
+.kadai-list{
+    padding: 50px 0 50px 50px;
+    >li{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+//フリースペース
+.free{
+    width: 100%;
+    height: 100vh;
+    background-color: #d0eeb2;
+}
