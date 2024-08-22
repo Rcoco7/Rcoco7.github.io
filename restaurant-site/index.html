@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"content="イタリアンレストラン「ラ パティスリー ドゥ フルール」前菜からドルチェまで、豊富なメニューをご用意しております。ランチ、ディナー、宴会など、様々なシーンにご利用ください">
+  <title>イタリアンレストランのサイト制作</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/vegas.css">
+  <link rel="stylesheet" href="css/hamburgers.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="touch-icon.png">
+</head>
+<body id="top">
+  <header>
+    <h1>Patisserie de Fleurs<span>ラ パティスリー ドゥ フルール</span></h1>
+    <p class="tag-line">花咲く魔法のパティスリー</p>
+  </header>
+
+  <nav id="g-nav">
+  <ul>
+    <li><a href="#top" data-en="TOP">トップ</a></li>
+    <li><a href="#news" data-en="NEWS">お知らせ</a></li>
+    <li><a href="#menu" data-en="MENU">メニュー</a></li>
+    <li><a href="#movie" data-en="MOVIE">動画</a></li>
+    <li><a href="#shop" data-en="SHOP">店舗情報</a></li>
+    <li><a href="#faq" data-en="FAQ">よくある質問</a></li>
+    <li><a href="#" >旧Twitter</a></li>
+    <li><a href="#" >LINE</a></li>
+  </ul>
+  </nav>
+
+  <button class="hamburger hamburger--vortex" type="button" id="ham-btn">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+
+  <a href="form/" class="to-form">ご予約はこちらから</a>
+
+  <div id="main-visual"></div><!-- vagasを使うのでJSファイルに画像ファイルを入れた -->
+
+  <div class="main-copy">
+    <h2>厳選した素材と熟練の技が織りなす<br>本場のイタリア料理を<br class="sp-on">カジュアルな空間で</h2>
+    <p class="lead">前菜からドルチェまで、<br class="sp-on">豊富なメニューをご用意しております。<br>ランチ、ディナー、宴会など、<br class="sp-on">様々なシーンにご利用いただけます。</p>
+  </div><!-- /.main-copy -->
+
+  <div class="gallery">
+    <p><img src="img/gallery-2.webp" alt=""></p>
+    <p><img src="img/gallery-1.webp" alt=""></p>
+  </div><!-- /.gallery -->
+
+  <main>
+    <section id="news" class="content">
+      <h3 data-en="NEWS">お知らせ</h3>
+      <dl id="news-list">
+        <!-- JSで外部データを呼びだしている"ajax" -->
+      </dl>
+    </section>
+
+    <section id="menu" class="content">
+      <h3 data-en="MENU">メニュー</h3>
+      <div class="menu-wrapper">
+        <div class="menu-box">
+          <a href="img/menu-1.webp" data-lightbox="menu">
+          <p class="menu-title">マルゲリータ</p>
+          <p class="menu-photo"><img src="img/menu-1.webp" alt=""></p>
+          </a>
+        </div><!-- /.menu-box -->
+
+        <div class="menu-box">
+          <a href="img/menu-2.webp" data-lightbox="menu">
+          <p class="menu-title">ディアボラ</p>
+          <p class="menu-photo"><img src="img/menu-2.webp" alt=""></p>
+          </a>
+        </div><!-- /.menu-box -->
+
+        <div class="menu-box">
+          <a href="img/menu-3.webp" data-lightbox="menu">
+          <p class="menu-title">ボロネーゼ</p>
+          <p class="menu-photo"><img src="img/menu-3.webp" alt=""></p>
+          </a>
+        </div><!-- /.menu-box -->
+
+        <div class="menu-box">
+          <a href="img/menu-4.webp" data-lightbox="menu">
+          <p class="menu-title">インヴォルティーニ</p>
+          <p class="menu-photo"><img src="img/menu-4.webp" alt=""></p>
+          </a>
+        </div><!-- /.menu-box -->
+
+        <div class="menu-box">
+          <a href="img/menu-5.webp" data-lightbox="menu">
+          <p class="menu-title">クレマ カタラーナ</p>
+          <p class="menu-photo"><img src="img/menu-5.webp" alt=""></p>
+          </a>
+            
+        </div><!-- /.menu-box -->
+        <div class="menu-box">
+          <a href="img/menu-6.webp" data-lightbox="menu">
+          <p class="menu-title">ジェラート</p>
+          <p class="menu-photo"><img src="img/menu-6.webp" alt=""></p>
+          </a>
+        </div><!-- /.menu-box -->
+      </div><!-- /.menu-wrapper -->
+    </section>
+
+    <div class="parallax"></div><!-- /.parallax -->
+
+    <section id="movie" class="content">
+      <h3 data-en="MOVIE">動画</h3>
+      <div class="movie-inner">
+        <iframe  src="https://www.youtube.com/embed/pOaTZgTVtTw?si=D5yOuXQWFZh-PbWa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div><!-- /.movie-inner -->
+    </section>
+
+    <section id="shop" class="content">
+      <h3 data-en="SHOP">店舗情報</h3>
+      <div class="shop-container">
+        <div class="g-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.4999111785355!2d139.6896649246372!3d35.68931382953189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd4b71a37a1%3A0xeb26b01652be2cf1!2z5p2x5Lqs6YO95bqB6YO95rCR5bqD5aC0!5e0!3m2!1sja!2sjp!4v1722240797630!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- /.g-map -->
+
+        <div class="shop-wrapper">
+          <dl>
+            <dt>住所</dt><dd>東京都豊島区南池袋1-2-ｘ</dd>
+            <dt>電話番号</dt><dd><a class="tel" href="tel:03-3333-xxxx">03-3333-xxxx</a></dd>
+            <dt>メールアドレス</dt><dd><a href="mailto:example@email.com">example@email.com</a></dd>
+          </dl>
+          <dl>
+            <dt>営業時間</dt><dd>11:00 ~ 22:00</dd>
+            <dt>定休日</dt><dd>年末年始</dd>
+            <dt>席数</dt><dd>70席</dd>
+          </dl>
+        </div><!-- /.shop-wrapper -->
+      </div><!-- /.shop-container -->
+    </section>
+    
+    <section id="faq" class="content">
+      <h3 data-en="FAQ">よくある質問</h3>
+      <details open name="faq">
+        <summary data-qustion="Q">アレルギーや苦手な食材はありますか？</summary>
+        <p class="answer" data-answer="A">はい、事前にご連絡いただければ、可能な限り対応させていただきます。ただし、メニューによっては対応できない場合もございますので、ご了承ください。</p>       
+      </details>
+
+      <details name="faq">
+        <summary data-qustion="Q">テイクアウトはできますか？</summary>
+        <p class="answer" data-answer="A">はい、できます。パスタ、ピザ、サラダなど、人気メニューをテイクアウトでご利用いただけます。詳しくは、店頭またはホームページにてご確認ください。</p>       
+      </details>
+
+      <details name="faq">
+        <summary data-qustion="Q">貸切営業はできますか？</summary>
+        <p class="answer" data-answer="A">はい、できます。詳しくは、店舗までお問い合わせください。</p>       
+      </details>
+
+      <details name="faq">
+        <summary data-qustion="Q">どんな服装で行けばいいですか？</summary>
+        <p class="answer" data-answer="A">カジュアルな服装で大丈夫です。ただし、ディナータイムは少しフォーマルな雰囲気ですので、ジャケットやワンピースなどの服装がおすすめです。</p>       
+      </details>
+    </section>
+
+    <div class="carousel">
+      <ul class="bxslider">
+        <li><img src="img/menu-1.webp" alt=""></li>
+        <li><img src="img/menu-3.webp" alt=""></li>
+        <li><img src="img/menu-5.webp" alt=""></li>
+        <li><img src="img/gallery-1.webp" alt=""></li>
+        <li><img src="img/menu-2.webp" alt=""></li>
+        <li><img src="img/menu-4.webp" alt=""></li>
+        <li><img src="img/menu-6.webp" alt=""></li>
+        <li><img src="img/gallery-2.webp" alt=""></li>
+      </ul>
+
+    </div><!-- /.carousel -->
+
+  </main>
+  <footer>
+    <p><small>&copy;<span id="this-year"></span>ラ パティスリー ドゥ フルール</small></p>
+  </footer>  
+  
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+<script src="js/vegas.js"></script>
+<script src="js/script.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+
+</body>
+</html>

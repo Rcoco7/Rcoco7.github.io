@@ -1,0 +1,36 @@
+2024年7月９日
+
+制作物：3連ガチャ
+使用するjaveScriptの機能
+•for文
+•if文
+•配列
+•Math.randam
+
+
+1．使用する画像のランクと名前を整理する
+ランクの配列名
+star3が2名 排出率5% 01.png,02.png
+star2が3名 排出率35% 03.png,04.png,05.png,
+star1が4名 排出率60% 06.png,07.png,08.png,09.png
+
+2.使用する変数や配列を事前にまとめておく
+配列
+star3
+star2
+star1
+
+3.排出率
+star1Ratio = 60
+star2Ratio = 61~95  95とは星1と星2の排出率を合わせた数字
+
+4.各ランクに入っているキャラ数
+star1Total = 4
+star2Total = 3
+star3Total = 2
+
+
+
+
+
+

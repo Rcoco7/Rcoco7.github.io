@@ -1,0 +1,119 @@
+@charset "utf-8";
+html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,:after,:before{background-repeat:no-repeat;box-sizing:inherit}:after,:before{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0;box-sizing:border-box;}audio:not([controls]){display:none;height:0}hr{overflow:visible}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}summary{display:list-item}small{font-size:80%}[hidden],template{display:none}abbr[title]{border-bottom:1px dotted;text-decoration:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace,monospace}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}input{border-radius:0}[role=button],[type=button],[type=reset],[type=submit],button{cursor:pointer}[disabled]{cursor:default}[type=number]{width:auto}[type=search][type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit}optgroup{font-weight:700}button{overflow:visible}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:0;padding:0}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button:-moz-focusring{outline:1px dotted}[type=reset],[type=submit],button,html [type=button]button,select{text-transform:none}button,input,select,textarea{background-color:transparent;border-style:none;color:inherit}select::-ms-expand{display:none}select::-ms-value{color:currentColor}legend{border:0;color:inherit;display:table;max-width:100%;white-space:normal}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}[type=search]img{border-style:none;vertical-align: bottom}progress{vertical-align:baseline}svg:not(:root){overflow:hidden}audio,canvas,progress,video{display:inline-block}@media screen{[hidden~=screen]{display:inherit}[hidden~=screen]:not(:active):not(:focus):not(:target){position:absolute!important;clip:rect(0 0 0 0)!important}}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled]{cursor:default}::-moz-selection{background-color:#b3d4fc;color:#000;text-shadow:none}::selection{background-color:#b3d4fc;color:#000;text-shadow:none}ul,ol{list-style:none;}a{text-decoration:none;}img{max-width: 100%;vertical-align: bottom;}
+
+body{
+  font-family: sans-serif;
+}
+header{
+  width: 100%;
+  padding: 20px;
+  background-color: #e6a289;
+  >h1{
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
+main{
+  padding: 60px 10px;
+}
+.wrapper{
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto 0;
+  >p{
+    width: 30%;
+    aspect-ratio: 6/7;
+    border: 1px solid #333;
+    >img{
+      object-fit: cover;
+      object-position: center center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+footer{
+  width: 100%;
+  padding: 20px 0;
+  background-color: #e6a289;
+  >p{
+    text-align: center;
+  }
+}
+
+.gachagacha{
+  margin: 0 auto;
+  width: 140px;
+
+}
+
+
+
+
+
+/* ボタンのスニペット */
+.button-14,
+.button-14 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-14 {
+    position: relative;
+    width: 250px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+
+.button-14::before {
+    position: absolute;
+    top: 7px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+    border-radius: inherit;
+    box-sizing: inherit;
+    box-shadow: 0 5px 0 0 rgba(0, 0, 0, .2);
+    background-color: #f4b12c;
+    content: '';
+}
+
+.button-14 span {
+    width: 100%;
+    padding: .9em 2em;
+    border: 2px solid #000;
+    border-radius: inherit;
+    background-color: #ff4d00;
+    color: #000;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.button-14 span::after {
+    display: inline-block;
+    transform: rotate(45deg);
+    width: 5px;
+    height: 5px;
+    margin-left: 10px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    content: '';
+}
+
+.button-14:hover::before {
+    transition: box-shadow .2s;
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, .2);
+}
+
+.button-14:hover span {
+    transition: transform .2s;
+    transform: translateY(2px);
+}
