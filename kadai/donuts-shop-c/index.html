@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donuts-shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="icon" href="img/ドーナツの無料アイコン1.png">
+</head>
+<body>
+  <header id="sp-header">
+    <h1>FLICA<br>
+      Bread&Salad</h1>
+
+    <nav id="g-nav">
+      <ul>
+        <li><a href="#about-page">About</a></li>
+        <li><a href="#access-page">Access</a></li>
+        <li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+        <li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <button id="ham-btn" ><span></span></button>
+
+
+
+
+
+  <div class="main-visual">
+    <ul class="bxslider">
+      <li><img src="img/01.webp" alt=""></li>
+      <li><img src="img/02.webp" alt=""></li>
+      <li><img src="img/03.webp" alt=""></li>
+      <li><img src="img/04.webp" alt=""></li>
+    </ul>
+  </div><!-- /.main-visual -->
+
+<div class="sp-title">
+  <p>FLICA<br>
+    Bread&Salad</p>
+</div>
+
+
+  <a class="cta-btn" href="#">オンラインショップへ</a>
+
+  <main>
+    <div class="about section" id="about-page">
+      <h2 data-en="About">私たちについて</h2>
+
+      <div class="text" data-aos="fade-up">
+      <h3>厳選素材と職人の技が生み出す <br>至福のひとときを<br> あなただけの特別なドーナツを見つけよう</h3>
+      </div>
+
+      <div class="text" data-aos="fade-up" data-aos-delay="100">
+      <p>厳選された素材と職人の技が生み出す、当店自慢の手作りドーナツ <br>ふんわりとした生地と優しい甘さのハーモニーは、心ときめく幸せをお届けします<br>日常に彩りを添える、至福のひとときを、当店でぜひご体感ください</p>
+      </div>
+
+    </div>
+   
+    
+    <div class="parallax"></div>
+
+    <div class="access section" id="access-page">
+      <h2 data-en="Access">アクセス</h2>
+
+      <div class="text" data-aos="fade-up">
+        <h3>FLICA<br>
+          Bread&Salad
+        </h3>
+      
+        <div class="g-map" class="text" data-aos="fade-up" data-aos-delay="100">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.945289559073!2d139.7117402746393!3d35.72756402742931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d68f6cfe057%3A0xddd17dcd7ecaf745!2z6LGK5bO25Yy656uL5Y2X5rGg6KKL5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1721115744214!5m2!1sja!2sjp"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- /.g-map -->
+      
+    </div>
+  </main>
+
+  <footer>
+    <p><small>&copy; <span id="this-year"></span>FLICA Bread&Salad</small></p>
+  </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/aos.js"></script>
+<script>
+  $(function(){
+  //メインビジュアル
+    $('.bxslider').bxSlider({
+    mode: 'fade',
+    auto: true,
+    controls: false,
+    pager: false,
+    speed: 1000,
+    pause: 3000,
+    touchEnabled: false,//スマホ時のスライダー内ｽｸﾛｰﾙを無効、元のJSファイルから持ってきて、trueからfalseに変えた
+    });
+    //西暦の取得
+    //変数ullYearに西暦だけを代入
+    const fullYear = new Date().getFullYear();
+    console.log(fullYear);
+    
+    if(fullYear >= 2025){
+      //2024-fullYear
+      $('#this-year').text('2024-' + fullYear);
+    }else{
+      $('#this-year').text(fullYear);
+    }
+
+    //ハンバーガーボタン
+    //#ham-btnをon.clickしたら、#ham-btnに.clickをトグルすると#sp-headerに.slideをトグルする
+    $('#ham-btn').on('click',function(){
+      $(this).toggleClass('click');
+      $('#sp-header').toggleClass('slide')
+    });
+
+    //#g-nav a
+    $('#g-nav a').on('click',function(){
+      $('#sp-header').removeClass('slide');
+      $('#ham-btn').removeClass('click');
+    });
+  });
+
+  AOS.init({duration: 1000,});
+</script>
+
+</body>
+</html>

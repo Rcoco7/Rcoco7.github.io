@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NetSmart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/icons8-company-16.png">
+</head>
+<body>
+  <header>
+    <h1>Net Smart</h1>
+    <p>よりスマートなインターネットライフを</p>
+  </header>
+  <nav class="g-nav">
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">CONCEPT</a></li>
+      <li><a href="#">SERVICE</a></li>
+      <li><a href="#">ACCESS</a></li>
+    </ul>
+  </nav><!-- /.g-nav -->
+  
+
+  <main>
+    <div class="main-visual">
+      <img src="img/main.jpg" alt="">
+    </div>
+    <h2>必要なものは、<br>ビジネスの価値を届ける<br>デザインの力。
+    </h2>
+    <p>Net Smartは、ビジネスとユーザーを理解し、<br>関係性を構築するためのストーリーの設計とUXデザインをご提供し、<br>よりスマートなインターネットライフを送るお手伝いを致します。
+    </p>  
+  </main>
+  
+  <div class="wrapper">
+    <div class="box">
+      <h3>CONCEPT</h3>
+      <div class="thumb"><img src="img/01.jpg" alt=""></div>
+      <div class="text">Net Smartは、「心に響くデザインで、人と企業の架け橋となる」をコンセプトに、Webデザインのサービスを提供しております。
+        長年の経験と実績を活かし、お客様のニーズに合わせた最適なデザインをご提案いたします。</div>
+    </div>
+
+    <div class="box">
+      <h3>SERVICE</h3>
+      <div class="thumb"><img src="img/02.jpg" alt=""></div>
+      <div class="text">常に最新のトレンドを取り入れ、革新的なデザインをご提案することで、お客様の競争優位性を高めます。Webサイト制作だけでなく、アプリ制作や広告デザインなど、幅広いサービスを提供し、ワンストップでトータルなデザインソリューションをお届けいたします</div>
+    </div>
+
+    <div class="box">
+      <h3>ACCESS</h3>
+      <div class="thumb"><img src="img/03.jpg" alt=""></div>
+      <div class="text">Net Smartは、デザインを通して、人と企業をつなぎ、社会に貢献する存在であり続けます。
+        お気軽にお問い合わせください。</div>
+    </div>
+  </div><!-- "wrapper" -->
+  <div class="map">
+    <h3>Map</h3>
+    <div class="map-inner">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.1207205901107!2d139.69052977859974!3d35.68973300226049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd4c86bcb9d%3A0xe5b1c573920cfe2e!2z5p2x5Lqs6YO95bqB56ys5LiA5pys5bqB6IiOIOWMl-Wxleacm-WupA!5e0!3m2!1sja!2sjp!4v1719624481440!5m2!1sja!2sjp"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <footer>
+    <p><small>&copy;2001-<span id="year">2024</span> Net Smart all rights reserved.</small></p>
+    <ul class="icon">
+      <li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
+      <li><a href="#"><img src="img/x-twitter.svg" alt=""></a></li>
+    </ul>
+  </footer>
+  <script>
+    //西暦を取得して変数に代入
+    const fullYear= new Date().getFullYear();
+    //const fullYear=2025 確認のために入力してみた
+    console.log(fullYear);
+
+    
+      document.querySelector('#year').textContent=fullYear;
+
+    
+
+  </script>
+</body>
+</html>

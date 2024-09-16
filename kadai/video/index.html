@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>動画をhtmlで再生させる</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .video-wrapper{
+      width: 100%;
+      height: 100vh;/* １画面分が100vh */
+      margin: 0 auto;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      
+    }
+    video{
+      object-fit: cover;
+      object-position: center center;/* 初期値はCevter、Center */
+      width: 100%;
+      height: 100%;
+      
+    }
+    .text{
+      width: 40%;
+      padding: 200px 50px;
+      background-color: #ffffff83;/* 7~8桁目は不透明度 */
+      font-family: "Libre Baskerville", serif;
+    }
+    h1{
+      font-size: 48px;
+      margin-bottom: 60px;
+      text-align: center;
+    }
+    p{
+      font-size: 20px;
+      line-height: 2;
+    }
+
+    @media(max-width:640px){
+      .text{
+        width: 80%;
+        padding: 40px 20px;
+        margin: 40px auto;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+      }
+      h1{
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+    p{
+      font-size: 16px;
+      
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="video-wrapper">
+    <video src="img/01.mp4"autoplay muted playsinline loop poster=""></video>
+  </div><!-- /.video-wrapper -->
+  <div class="text">
+    <h1>クラゲの<br>生態について</h1>
+    <p>クラゲは、その幻想的な姿から多くの人を魅了する海洋生物です。傘のような体を持ち、水中を漂う姿はまるで宇宙を漂う星雲のようにも見えます。しかし、その美しい見た目とは裏腹に、クラゲは古くから地球に存在する生命体であり、独自の進化を遂げてきました。<br>
+
+クラゲの体は、なんと95%が水分で構成されており、ゼラチン質の柔らかい組織から成り立っています。そのため、非常に軽く、水の流れに乗って漂うことができます。また、クラゲには脳や心臓といった複雑な器官はなく、神経系は比較的単純です。しかし、触手に備わった刺胞という細胞を使って獲物を捕らえ、麻痺させて食べるという高度な狩りの技術を持っています。<br>
+
+クラゲの生殖方法は種類によって様々ですが、多くの種は複雑な生活環を送ります。プランクトンとして海中を漂う幼生から、岩などに付着してポリプと呼ばれる群体を作る段階を経るものもいます。そして、ある条件が整うとポリプからクラゲの形をした個体が生まれ、再び海中を漂い始めるのです。<br>
+
+クラゲは、その美しさだけでなく、生態系においても重要な役割を果たしています。プランクトンを捕食することで海洋生態系のバランスを保ち、また、他の生物の餌となることもあります。しかし、近年では海水温の上昇や海洋汚染など、人間活動による環境の変化が原因で、一部のクラゲが大量発生する現象も起きています。<br>
+
+クラゲは、その神秘的な姿と複雑な生態から、古くから人々の興味を引いてきました。今後も、クラゲの研究は進み、私たちに新たな発見をもたらしてくれるでしょう。
+</p>
+  </div><!-- /.text -->
+  
+  
+</body>
+</html>

@@ -1,0 +1,51 @@
+レスポンシブデザインの作成
+採点ポイント
+cssは外部参照で、リセットと文字コードを設定する事
+fontawesomeからsvgアイコンをダウンロードし、使用すること
+ナビゲーションボタンに境界線とホバーの適切な設定をする
+flexプロパティを使ってコンテンツを均等に並べる
+h1にGoogle Fontsを使用すること
+Google Mapを埋め込み、可変に対応させる
+適切なメディアクエリーを設定すること
+適切な余白を設定すること
+作例通りのレイアウトにする
+作例
+
+http://felica29.starfree.jp/net-smart_2024-04/
+
+使用テキスト
+
+Net Smart
+よりスマートなインターネットライフを
+
+HOME
+CONCEPT
+SERVICE
+ACCESS
+
+必要なものは、ビジネスの価値を届ける>デザインの力。
+Net Smartは、ビジネスとユーザーを理解し、関係性を構築するためのストーリーの設計とUXデザインをご提供し、よりスマートなインターネットライフを送るお手伝いを致します。
+
+
+CONCEPT
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+
+Net Smartは、「心に響くデザインで、人と企業の架け橋となる」をコンセプトに、Webデザインのサービスを提供しております。
+長年の経験と実績を活かし、お客様のニーズに合わせた最適なデザインをご提案いたします。
+
+SERVICE
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+常に最新のトレンドを取り入れ、革新的なデザインをご提案することで、お客様の競争優位性を高めます。Webサイト制作だけでなく、アプリ制作や広告デザインなど、幅広いサービスを提供し、ワンストップでトータルなデザインソリューションをお届けいたします
+
+
+
+ACCESS
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+Net Smartは、デザインを通して、人と企業をつなぎ、社会に貢献する存在であり続けます。
+お気軽にお問い合わせください。
+
+
+Map
+
+
+© 2001-2024 Net Smart all rights reserved.

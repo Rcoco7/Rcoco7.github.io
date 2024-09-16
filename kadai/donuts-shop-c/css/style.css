@@ -1,0 +1,325 @@
+@charset "utf-8";
+html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,:after,:before{background-repeat:no-repeat;box-sizing:inherit}:after,:before{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0;box-sizing:border-box;}audio:not([controls]){display:none;height:0}hr{overflow:visible}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}summary{display:list-item}small{font-size:80%}[hidden],template{display:none}abbr[title]{border-bottom:1px dotted;text-decoration:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace,monospace}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}input{border-radius:0}[role=button],[type=button],[type=reset],[type=submit],button{cursor:pointer}[disabled]{cursor:default}[type=number]{width:auto}[type=search][type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit}optgroup{font-weight:700}button{overflow:visible}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:0;padding:0}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button:-moz-focusring{outline:1px dotted}[type=reset],[type=submit],button,html [type=button]button,select{text-transform:none}button,input,select,textarea{background-color:transparent;border-style:none;color:inherit}select::-ms-expand{display:none}select::-ms-value{color:currentColor}legend{border:0;color:inherit;display:table;max-width:100%;white-space:normal}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}[type=search]img{border-style:none;vertical-align: bottom}progress{vertical-align:baseline}svg:not(:root){overflow:hidden}audio,canvas,progress,video{display:inline-block}@media screen{[hidden~=screen]{display:inherit}[hidden~=screen]:not(:active):not(:focus):not(:target){position:absolute!important;clip:rect(0 0 0 0)!important}}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled]{cursor:default}::-moz-selection{background-color:#b3d4fc;color:#000;text-shadow:none}::selection{background-color:#b3d4fc;color:#000;text-shadow:none}ul,ol{list-style:none;}a{text-decoration:none;}img{max-width: 100%;vertical-align: bottom;}
+
+
+/* スムーススクロール個別にかけるならJavaScriptを使う */
+html{
+  scroll-behavior: smooth;
+}
+
+/* header部分 */
+  header{
+    background-color: #fff;
+    width: fit-content;
+    height: 80vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    font-family: "Playwrite CU", cursive;
+    font-weight: bold;
+    padding: 20px;
+
+    >h1{
+      margin-bottom: 50px;
+      font-size: 30px;   
+    }
+  }
+
+  @media (max-width:640px){
+  header{
+    width: fit-content;
+    height: 60vh;
+    background-color: #ffffffbb;
+    backdrop-filter: blur(10px);
+    translate: -100%;
+    transition: 0.2s;
+
+    >h1{
+      margin-bottom: 30px;
+      font-size: 26px;   
+     }  
+    &.slide{
+      translate: 0 0;  
+      
+    }
+  }
+  }
+
+/* ここまでヘッダー---------------------------- */
+
+
+
+
+/* ナビゲーション */
+#g-nav{
+  padding-left: 20px;
+  >ul{
+    >li{
+      margin-bottom: 10px;
+      &:nth-of-type(n+3){
+        width: 40px;
+      }
+      &:nth-of-type(2){
+        margin-bottom: 30px;
+      }
+      >a{
+        color: #000;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+
+
+
+/* メインビジュアル */
+.main-visual{
+  width: calc(100% - 100px);
+  height: calc(100vh - 50px);
+  margin: 50px 0 0 100px;
+
+  @media(max-width:640px){
+    width: 100%;
+  height: 60vh;
+  margin: 0 0 100px 0;
+  }
+}
+.main-visual li{
+  width: 100%;
+  height: 100vh;
+  @media (max-width: 640px){
+    height: 60vh;
+  }
+}
+.main-visual img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* CTAボタン */
+.cta-btn{
+  position: fixed;
+  right: 0;
+  top: 50%;
+  translate: 0 -50%;
+  z-index: 20;
+  background-color: #b79d09;
+  color: #fff;
+  writing-mode: vertical-rl;/* 文字を縦書きにする */
+  padding: 15px 10px;
+  font-family: "Playwrite CZ", cursive;
+  font-weight: bold;
+  height: fit-content;/* 中身に合わせる */
+}
+
+/* メイン部分 */
+
+main{
+  position: relative;
+  z-index: 15;
+}
+.section{
+  width: 100%;
+  background-color: #fff;
+  min-height: 100vh;/* 中身が空でも最低1画面分の高さが確保される */
+  padding: 30vh 10px;
+  scroll-margin-top: -130px;/* スムーススクロールで止まる場所の調整 */
+  @media (max-width: 640px){
+    scroll-margin-top: -60px;
+  }
+  >h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    
+    &::before{
+      content: attr(data-en);
+      font-family: serif;
+      font-size: 28px;
+      display: block;
+      color: #575760;
+    }    
+  }
+}
+
+
+#about-page{
+  text-align: center; 
+} 
+p{
+  line-height: 2;   
+} 
+
+h3 {
+  
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
+
+.g-map{
+  
+  width: 80%;
+  aspect-ratio: 960/360;
+  margin: 0 auto;
+  >iframe{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);/* 画像やiframeを白黒にする */
+  }
+}
+
+
+
+/* 640px以下のメイン部分 */
+@media (max-width:640px){
+  .section>h2{
+    font-size: 24px;
+    &::before{
+      font-size: 20px;
+    }  
+  }
+  h3{
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  p{
+    font-size: 14px;
+  }
+  .g-map{
+    width: 96%;
+    aspect-ratio: 1/0.75;
+  } 
+}
+
+
+
+
+
+.parallax{
+  width: 100%;
+  height: 50vh;
+  background: url(../img/bg.webp) no-repeat center center/cover fixed;/* この下のも入れてショートハンドで書いた */
+  /* background-attachment: fixed; */
+
+  /* 960px以下 */
+  @media (max-width: 960px){
+    background: url(../img/bg.webp) no-repeat center center/cover scroll;/* scrollに書き換えた */
+
+  }
+}
+
+
+/* フッター部分 */
+footer{
+  width: 100%;
+  padding: 10px 0 40px;
+  >p{
+    width: 80%;
+    margin: 0 auto;
+    text-align: right;
+  }
+  @media (max-width: 640px){
+    >p{
+      text-align: center;
+    }
+  }
+}
+
+
+/* ハンバーガーボタン */
+#ham-btn{
+  width: 44px;
+  height: 44px;
+  /* border: 1px solid #333; */
+  position: fixed;
+  right: 10px;
+  top: 5px;
+  z-index: 10;
+  background-color: #b79d09;
+  display: none;/* 要素を非表示 */
+  @media (max-width: 640px){
+    display: block;/* 要素を表示 */
+  }
+
+  >span{
+    display: block;
+    width: 60%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    transition: 0.2s;
+
+    &::before{
+      display: block;
+      content: "";
+      width: 100%;
+      height: 3px;
+      background-color: #ffffff;
+      position: absolute;
+      top: 8px;
+      transition: 0.3s;
+    }
+      &::after{
+        display: block;
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: #ffffff;
+        position: absolute;
+        top: -8px;
+        transition: 0.3s;
+      }
+    } 
+  }
+
+ 
+  
+
+
+#ham-btn.click{
+  >span{
+    background-color: transparent;
+
+    &::before{
+      top: 0;
+      rotate: 45deg;
+    }
+    &::after{
+      top: 0;
+      rotate: -45deg;
+    }
+  }
+}
+
+
+.sp-title{
+  display: none;
+
+  @media (max-width: 640px){
+    display: block;
+    font-family: "Playwrite CU", cursive;
+    /* font-weight: bold; */
+    text-align: center;
+    width: fit-content;
+    padding: 20px;
+    background-color: #b79d0996;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60px;
+    margin: auto;
+    z-index: 10;
+    font-size: 24px;
+  }
+}

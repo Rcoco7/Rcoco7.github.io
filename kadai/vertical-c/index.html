@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>縦書きとルビの設定</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#" id="to-top"><img src="img/to-top.svg" alt=""></a>
+
+  <header>
+    <h1>小倉百人一首</h1>
+  </header>
+
+  <div class="contents">
+    <h2><ruby>良暹法師<rt>りょうぜんほうし</rt></ruby></h2>
+    <p>
+      さびしさに<br>やどを立ちいで<br>てながむれば<br>いづくも同じ<br><ruby>秋<rt>あき</rt></ruby>の夕暮
+    </p>
+ </div>
+  <div class="parallax-1"></div>
+
+<div class="contents">
+  <h2><ruby>紀友則<rt>きのとものり</rt></ruby></h2>
+  <p>
+    ひさかたの<br>光のどけき<br><ruby>春<rt>はる</rt></ruby>の日に<br>しづ心なく<br>花の散るらむ
+  </p>
+</div>
+  <div class="parallax-2"></div>
+
+  <div class="contents">
+  <h2><ruby>持統天皇<rt>じとうてんのう</rt></ruby></h2>
+  <p>
+    春すぎて<br>夏来にけらし<br><ruby>白妙<rt>しろたえ</rt></ruby>の<br>衣ほすてふ<br>天の<ruby>香具山<rt>かぐやま</rt></ruby>
+  </p>
+</div>
+  <div class="parallax-3"></div>
+
+  <div class="contents">
+  <h2><ruby>山部赤人<rt>やまべのあかひと</rt></ruby></h2>
+  <p>
+    <ruby>田子<rt>たご</rt></ruby>の浦に<br>うち出でて見れば<br><ruby>白妙<rt>しろたえ</rt></ruby>の<br>富士の高嶺に<br>雪はふりつつ
+  </p>
+</div>
+  <div class="parallax-4"></div>
+
+  <div class="contents">
+  <h2><ruby>小野小町<rt>おののこまち</rt></ruby></h2>
+  <p>
+    花の色は<br>うつりにけりな<br>いたづらに<br>わが身世にふる<br>ながめせしまに
+  </p>
+</div>
+  <div class="parallax-5"></div>
+
+  <div class="contents">
+  <h2><ruby>蟬丸<rt>せみまる</rt></ruby></h2>
+  <p>
+    これやこの<br>行くも帰るも<br>別れては<br>知るも知らぬも<br>あふ坂の関
+  </p>
+</div>
+  <div class="parallax-6"></div>
+
+    <div class="contents">
+  <h2><ruby>中納言行平<rt>ちゅうなごんゆきひら</rt></ruby></h2>
+  <p>
+    立ち別れ<br>いなばの山の<br><ruby>峰<rt>みね</rt></ruby>に生ふる<br>まつとし聞かば<br>今帰り来む
+  </p>
+</div>
+  <div class="parallax-7"></div>
+  
+
+
+
+  <footer><p><small>&copy;<span id="this-year"></span>COCO</small></p></footer>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+
+  <script>
+    $(function(){
+      $('#to-top').on('click',function(){
+        $('html,body').animate({scrollTop:0});
+      });
+
+      $(window).scroll(function(){
+        let yScroll = $(window).scrollTop();
+        let headerH = $('header').outerHeight();
+
+        if(yScroll > headerH){
+          $('#to-top').fadeIn();
+        }else{
+          $('#to-top').fadeOut();
+        }
+        return false
+      });
+
+
+        const fullYear = new Date().getFullYear();
+      //const fullYear = 2025;確認の為
+      if (fullYear >= 2025) {
+        $('#this-year').text('2024-' + fullYear);
+      } else {
+        $('#this-year').text(fullYear);
+      }
+
+
+
+
+    });
+    
+    
+
+  </script>
+  
+</body>
+</html>
+
+

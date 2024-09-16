@@ -12,7 +12,7 @@ html{
 header{
     width: 25%;
     height: 100vh;
-    background-color: #9ff6a1;
+    background-color: #d3f3d4;
     position: sticky;
     top: 0;
     padding: 20px;
@@ -23,17 +23,19 @@ header{
     }
 }
 
+
 //ナビゲーション
 #g-nav{
     padding: 20px;
     li{
         margin-bottom: 20px;
         >a{
-            color: #111;
+            color: #3e5b49;
             padding: 4px 10px;
+            border-radius: 20px;
         }
         &.current>a{
-            background-color: #111;
+            background-color: #3e5b49;
             color: #fff;
         }
     }
@@ -42,7 +44,7 @@ header{
 
 main{
     width: 75%;
-    background-color: #e9f5a6;
+    background-color: #e8ecd0;
 }
 //セクション共通
 .kadai-section{
@@ -114,5 +116,5 @@ main{
 .free{
     width: 100%;
     height: 100vh;
-    background-color: #d9ee39;
+    background-color: #eaf5f4;
 }

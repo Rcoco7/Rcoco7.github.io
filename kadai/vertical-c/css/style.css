@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,:after,:before{background-repeat:no-repeat;box-sizing:inherit}:after,:before{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0;box-sizing:border-box;}audio:not([controls]){display:none;height:0}hr{overflow:visible}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}summary{display:list-item}small{font-size:80%}[hidden],template{display:none}abbr[title]{border-bottom:1px dotted;text-decoration:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace,monospace}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}input{border-radius:0}[role=button],[type=button],[type=reset],[type=submit],button{cursor:pointer}[disabled]{cursor:default}[type=number]{width:auto}[type=search][type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit}optgroup{font-weight:700}button{overflow:visible}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:0;padding:0}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button:-moz-focusring{outline:1px dotted}[type=reset],[type=submit],button,html [type=button]button,select{text-transform:none}button,input,select,textarea{background-color:transparent;border-style:none;color:inherit}select::-ms-expand{display:none}select::-ms-value{color:currentColor}legend{border:0;color:inherit;display:table;max-width:100%;white-space:normal}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}[type=search]img{border-style:none;vertical-align: bottom}progress{vertical-align:baseline}svg:not(:root){overflow:hidden}audio,canvas,progress,video{display:inline-block}@media screen{[hidden~=screen]{display:inherit}[hidden~=screen]:not(:active):not(:focus):not(:target){position:absolute!important;clip:rect(0 0 0 0)!important}}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled]{cursor:default}::-moz-selection{background-color:#b3d4fc;color:#000;text-shadow:none}::selection{background-color:#b3d4fc;color:#000;text-shadow:none}ul,ol{list-style:none;}a{text-decoration:none;}img{max-width: 100%;vertical-align: bottom;}
+
+
+body{
+  font-family: "Yuji Boku", serif;
+ 
+}
+
+header{
+  width: 100%;
+  height: 100vh;
+  background-color: #fcfaf2;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  writing-mode: vertical-rl;
+  font-size: 56px;
+}
+
+.parallax-1{
+  width: 100%;
+  height: 70vh;
+  background: url(../img/01.jpg) no-repeat center center/cover fixed;
+}
+
+.parallax-2{
+  width: 100%;
+  height: 70vh;
+  background: url(../img/02.jpg) no-repeat center center/cover fixed;
+}
+
+.parallax-3{
+  width: 100%;
+  height: 70vh;
+  background: url(../img/03.webp) no-repeat center center/cover fixed;
+}
+
+.parallax-4{
+  width: 100%;
+  height: 70vh;
+  background: url(../img/04.webp) no-repeat center center/cover fixed;
+}
+
+.parallax-5{
+  width: 100%;
+  height: 70vh;
+  background: url(../img/05.webp) no-repeat center center/cover fixed;
+}
+
+.parallax-6{
+  width: 100%;
+  height: 70vh;
+  background: url(../img/06.webp) no-repeat center center/cover fixed;
+}
+
+.parallax-7{
+  width: 100%;
+  height: 70vh;
+  background: url(../img/07.webp) no-repeat center center/cover fixed;
+}
+
+.contents{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #616138;
+  color: #fcfaf2;
+  writing-mode: vertical-rl;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  line-height: 3;
+  border-top: 10px solid #fcfaf2;
+}
+h2{
+  font-size: 26px;
+  align-self: center;
+  margin: 100px 40px 0 0;
+
+}
+
+
+#to-top{
+  width: 40px;
+  height: 50px;
+  position: fixed;
+  padding: 5px;
+  right: 40px;
+  bottom: 40px;
+  z-index: 10;
+  /* display: none; */
+}
+
+footer{
+width: 100%;
+height: 150px;
+background-color: #616138;
+p{
+text-align: center;
+line-height: 150px;
+font-size: 20px;
+color: #fcfaf2;
+font-weight: bold;
+}
+}
+
+
+

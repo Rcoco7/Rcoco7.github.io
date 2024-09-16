@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>columnsを使ったメーソンリーレイアウト</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Masonry Layout</h1>
+  </header>
+  <main>
+    <div class="wrapper">
+
+      
+      <div class="box">
+        <p class="photo"><img src="img/01.jpg" alt=""></p>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, exercitationem.</p>
+      </div><!-- /.box -->
+
+
+      <div class="box">
+        <p class="photo"><img src="img/02.jpg" alt=""></p>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, exercitationem.</p>
+      </div><!-- /.box -->
+
+      <div class="box">
+        <p class="photo"><img src="img/03.jpg" alt=""></p>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, exercitationem.</p>
+      </div><!-- /.box -->
+
+      <div class="box">
+        <p class="photo"><img src="img/04.jpg" alt=""></p>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, exercitationem.</p>
+      </div><!-- /.box -->
+
+      <div class="box">
+        <p class="photo"><img src="img/05.jpg" alt=""></p>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, exercitationem.</p>
+      </div><!-- /.box -->
+
+      <div class="box">
+        <p class="photo"><img src="img/06.jpg" alt=""></p>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, exercitationem.</p>
+      </div><!-- /.box -->
+
+      <div class="box">
+        <p class="photo"><img src="img/07.jpg" alt=""></p>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, exercitationem.</p>
+      </div><!-- /.box -->
+
+      <div class="box">
+        <p class="photo"><img src="img/08.jpg" alt=""></p>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, exercitationem.</p>
+      </div><!-- /.box -->
+
+      <div class="box">
+        <p class="photo"><img src="img/09.jpg" alt=""></p>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, exercitationem.</p>
+      </div><!-- /.box -->
+
+      <div class="box">
+        <p class="photo"><img src="img/10.jpg" alt=""></p>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, exercitationem.</p>
+      </div><!-- /.box -->
+
+      <div class="box">
+        <p class="photo"><img src="img/11.jpg" alt=""></p>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, exercitationem.</p>
+      </div><!-- /.box -->
+
+      <div class="box">
+        <p class="photo"><img src="img/12.jpg" alt=""></p>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, exercitationem.</p>
+      </div><!-- /.box -->
+
+      <div class="box">
+        <p class="photo"><img src="img/13.jpg" alt=""></p>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, exercitationem.</p>
+      </div><!-- /.box -->
+
+      <div class="box">
+        <p class="photo"><img src="img/14.jpg" alt=""></p>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, exercitationem.</p>
+      </div><!-- /.box -->
+
+      <div class="box">
+        <p class="photo"><img src="img/15.jpg" alt=""></p>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, exercitationem.</p>
+      </div><!-- /.box -->
+
+      <div class="box">
+        <p class="photo"><img src="img/16.jpg" alt=""></p>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, exercitationem.</p>
+      </div><!-- /.box -->
+    </div><!-- /.wrapper -->
+
+   
+
+
+  </main>
+
+  <footer>
+    <p><small>&copy; <span id="this-year"></span>columns</small></p>
+  </footer>
+
+  <script>
+    const fullyear = new Date().getFullYear();
+    if(fullyear >= 2025){
+    document.querySelector('#this-year').textContent = '2024 - '+fullyear;
+    }else{
+      document.querySelector('#this-year').textContent = fullyear;
+    }
+
+  </script>
+  
+</body>
+</html>

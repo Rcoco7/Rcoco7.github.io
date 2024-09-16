@@ -1,0 +1,418 @@
+//パーシャルファイルを呼び出す.
+@use "reset"; //_reset.scssの省略形
+
+//変数の登録
+$color_1:#bef5ce;//headerと col-1
+$color_2:#86f4a5;//navとfooter
+$color_3:#f0f486;//main-text1とcol-3-text1
+$color_4:#f4ce86;//mein-text2とcol-3-text2
+$color_5:#eeacee;//mein-text3とcol-3-text3
+$text_color:#555;
+$font_en:"Lato", sans-serif;
+$point_1:640px;
+$point_2:900px;
+
+/* body{
+    background-color: $color_1;
+}
+@media(min-width:500px){
+    body{
+        background-color: $color_2;
+    }
+}
+@media(min-width:800px){
+    body{
+        background-color: $color_3;
+    }
+} これらをSassで書いてみる*/
+
+//関数の登録
+@mixin tab(){
+    @media(min-width:$point_1){//640px以上の場合
+        @content();
+    }
+}
+@mixin pc(){
+    @media(min-width:$point_2){//900px以上の場合
+        @content();
+    }
+}
+//font-sizeの指定 フルードではなくなる,Sassではこれが使える
+@function rem($px){
+@return ($px / 16) * 1rem;
+}
+
+body{
+    font-family: $font_en;
+    color:$text_color;
+    font-size: rem(16);//pxはいらない
+}
+
+
+//SPファースト
+//header部分
+header{
+    width: 100%;
+    height: 60px;
+    background-color: $color_1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    position: fixed;
+    z-index: calc(infinity);
+    >h1{
+        font-size: clamp(1.75rem, 1.409rem + 1.45vw, 2.5rem);//28px～40pxの間でフルード       
+        }
+    @include pc(){
+        position: static;//指定したpositionを解除した
+        height: auto;
+        padding: 30px 0;
+        justify-content: center;
+    }
+}
+
+//ハンバーガーボタン
+#ham-btn{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    position: relative;
+    >span{
+        display: block;
+        width: 24px;
+        height: 3px;
+        background-color: $text_color;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 24px;
+            height: 3px;
+            background-color: $text_color;
+            top: -8px;
+            transition: 0.2s;
+        }
+        &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 24px;
+            height: 3px;
+            background-color: $text_color;
+            top: 8px;
+            transition: 0.2s;
+        }
+    }
+    &.is-active>span{
+        background-color: transparent;
+        &::before{
+            top: 0;
+            rotate: 225deg;
+        }
+        &::after{
+            top: 0;
+            rotate: 315deg;
+        }
+    }
+    @include pc(){
+        display: none;
+    }
+}
+
+//pc用ナビゲーション
+#g-nav{
+    display: none;
+    @include pc(){
+        display: block;
+        width: 100%;
+        height: 50px;
+        background-color: $color_2;
+        position: sticky;
+        z-index: 10;
+        top: 0;
+        >ul{
+            display: flex;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            gap: 0 10px;
+           
+            a{
+                color: $text_color;
+                padding: 10px;
+                font-weight: bold;
+                &:hover{
+                    text-decoration: underline 5px #afed32;
+                    text-underline-offset: 5px;
+                }              
+            }
+        }
+    }
+}
+
+//スクロールした時の#g-nav
+body.scroll>#g-nav{
+    box-shadow: 0 6px 6px #969696;
+}
+
+//サブタイトル
+#sub-title{
+    font-family: $font_en;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    font-size: clamp(1.25rem, 0.5rem + 1.33vw, 1.5rem);
+    font-weight: bold;
+    color: #0a0a0a;
+    display: none;
+}
+body.scroll #sub-title{
+    display: block;
+
+}
+
+
+
+
+
+//sp用ナビゲーション
+#sp-nav{
+    translate: 100% 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: $color_2;
+    position: fixed;
+    z-index: 10;
+    top: 60px;
+    left: 0;
+    padding: 40px;
+    li{
+        margin-bottom: 14px;
+        >a{
+        color: $text_color;
+        display: block;
+        padding: 5px 10px;
+        border-bottom: 1px solid $text_color;
+        font-size: rem(18);
+        font-weight: bold;
+        }
+    }
+    &.slide{
+        translate: 0;
+        transition: 0.3s;//出る時だけにアニメーションを付けた
+    }
+    @include pc(){
+        display: none;
+    }
+}
+
+
+//共通ボタン
+.more{
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+    background-color: #fff;
+    color: $text_color;
+    padding: 10px 20px;
+    position: relative;
+    &::after{
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid $text_color;
+        border-right: 2px solid $text_color;
+        rotate: 45deg;
+        position: absolute;
+        right: 30px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+
+main{
+    padding:70px 10px 0;
+    @include pc(){
+        padding: 10px 10px 0;
+    }
+}
+
+//main-contents部分
+.contents-wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    &:nth-of-type(2)>.main-text{
+        background-color:$color_4 ;
+    }
+    &:nth-of-type(3)>.main-text{
+        background-color:$color_5 ;
+    }
+
+    @include pc(){
+        flex-direction: row-reverse;        
+        justify-content: space-between;
+        &:nth-of-type(2){
+            flex-direction: row;
+            }
+        >.main-img{
+            width: calc((100% - 20px) / 3 * 2 + 10px);
+        }
+        >.main-text{
+            width: calc((100% - 20px) / 3);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }               
+    }
+}
+
+
+.main-img{
+    width: 100%;
+    aspect-ratio: 4/2.6;
+    margin-bottom: 10px;
+    >img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.main-text{
+    background-color: $color_3;
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 10px;
+    >h2{
+        margin-bottom: 20px;
+        font-size: rem(25);
+    }
+    >p{
+        line-height: 1.75;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+//.col-1部分
+.col-1{
+    background-color: $color_1;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    >h2{
+        font-size: rem(22);
+        margin-bottom: 20px;
+    }
+    >p{
+        line-height: 1.5;
+        max-width: 640px;
+        margin: 0 auto;
+    }
+    @include tab(){
+        padding: 50px 20px;
+        >h2{
+            font-size: rem(24);
+        }
+    }
+    @include pc(){
+        padding: 80px 20px;
+        >h2{
+            margin-bottom: 40px;
+            line-height: 1.75;
+        }
+    }
+}
+
+//col-3部分
+.col-3-wrapper{
+   @include pc(){
+    display: flex;
+    justify-content: space-between;
+   } 
+}
+
+.col-3-box{
+    margin-bottom: 10px;
+
+    .col-3-img{
+        width: 100%;
+        aspect-ratio: 2/1;
+        >img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .col-3-text{
+        background-color: $color_3;
+        text-align: center;
+        padding: 20px;
+        >h3{
+            font-size: rem(24);
+        }
+        .icon{
+            width: 70px;
+            aspect-ratio: 1/1;
+            background-color: #fff;
+            border-radius: 50%;
+            padding: 10px;
+            margin: 20px auto;
+        }
+    }
+    @include tab(){
+        display: flex;
+        .col-3-img{
+            width: 50%;
+            aspect-ratio: 4/3;
+        }
+        .col-3-text{
+            width: 50%;
+            padding-top: 40px;
+        }
+    }
+    @include pc(){
+        display: block;
+        width: calc((100% - 20px) / 3);
+        >.col-3-img,>.col-3-text{
+            width: 100%;            
+        }
+    }
+}
+
+
+.col-3-box:nth-of-type(2)>.col-3-text{
+    background-color: $color_4;
+}
+.col-3-box:nth-of-type(3)>.col-3-text{
+    background-color: $color_5;
+}
+
+
+
+
+
+
+
+  footer{
+    background-color: $color_2;
+    margin: 0 10px 10px;
+    >p{
+        text-align: center;
+        padding: 20px 0;
+    }
+  } 
+   
