@@ -598,11 +598,10 @@ footer{
 
 /* 多言語化部分 */
 
-  body{
-    padding-top: 60px;
-  }
+ 
   #ham-btn{
-    top: 60px;
+    top: 56px;
+    background-color: #fff;
   }
   header{
     top: 100px;

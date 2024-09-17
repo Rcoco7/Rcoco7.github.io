@@ -53,20 +53,6 @@ $(function () {
   }
   
 
-  //多言語用のリダイレクト
- 
-  $('#btn-ja').href = 'https://rcoco7.github.io/restaurant-site-multi/';
-  
- 
-
- //イタリア語
-
-  $('#btn-it').href = 'https://rcoco7-github-io.translate.goog/restaurant-site-multi/?_x_tr_sl=ja&_x_tr_tl=it-CN&_x_tr_hl=ja#';
- 
-
-//英語
-
-  $('#btn-en').href = 'https://rcoco7-github-io.translate.goog/restaurant-site-multi/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja';
  
 
 
