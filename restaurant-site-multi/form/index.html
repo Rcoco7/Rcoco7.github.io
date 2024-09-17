@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"content="イタリアンレストラン「ラ パティスリー ドゥ フルール」前菜からドルチェまで、豊富なメニューをご用意しております。ランチ、ディナー、宴会など、様々なシーンにご利用ください">
+  <title>イタリアンレストランのサイト制作|予約ページ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/vegas.css">
+  <link rel="stylesheet" href="../css/hamburgers.css">
+  <link rel="apple-touch-icon" href="../touch-icon.png">
+
+</head>
+<body id="top" class="form-page">
+  <header>
+    <h1>Patisserie de Fleurs<span>ラ パティスリー ドゥ フルール</span></h1>
+    <p class="tag-line">花咲く魔法のパティスリー</p>
+  </header>
+
+  <nav id="g-nav">
+  <ul>
+    <li><a href="../" data-en="TOP">トップ</a></li>
+    <li><a href="../index.html#news" data-en="NEWS">お知らせ</a></li>
+    <li><a href="../index.html#menu" data-en="MENU">メニュー</a></li>
+    <li><a href="../index.html#movie" data-en="MOVIE">動画</a></li>
+    <li><a href="../index.html#shop" data-en="SHOP">店舗情報</a></li>
+    <li><a href="../index.html#faq" data-en="FAQ">よくある質問</a></li>
+    <li><a href="#" >X</a></li>
+    <li><a href="#" >LINE</a></li>
+  </ul>
+  </nav>
+
+  <button class="hamburger hamburger--vortex" type="button" id="ham-btn">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+
+  <div id="main-visual"></div><!-- vagasを使うのでJSファイルに画像ファイルを入れた -->
+ 
+  <main>
+    <section id="form" class="content">
+      <h3 data-en="RESERVE">予約フォーム</h3>
+      <div class="form-inner">
+        <iframe id="g-form" src="https://docs.google.com/forms/d/e/1FAIpQLSchMhSDPCJryzO_a4hmhSwlrhGdkhdjLdzdPFXWnMpCFOII4w/viewform?embedded=true" height="1422" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+      </div><!-- /.form-inner -->
+    </section>
+  </main>
+
+  <footer>
+    <p><small>&copy;<span id="this-year"></span>ラ パティスリー ドゥ フルール</small></p>
+  </footer>  
+  
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+<script src="../js/vegas.js"></script>
+<script src="../js/script.js"></script>
+<script>
+  $(function(){
+  //#g-formにリダイレクトさせるファイルのパスを代入する
+  let load = 0;
+  $('#g-form').on('load',function(){
+    load++;
+    if(load > 1){
+      window.location.href = 'thanks.html';
+    }
+  });
+  });
+
+
+</script>
+
+</body>
+</html>
