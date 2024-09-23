@@ -22,34 +22,48 @@ console.log(section6);
 //自身のスクロール量が0以上かつsection1未満の時
 if(y > 0 && y < section1){
     $('#g-nav li').removeClass('current');
+    $('#sp-nav li').removeClass('current');
 
 }else if(y>=section1 && y<section2 ){
     //yがsection1以上かつsection2未満
     $('#list-1').addClass('current').siblings('li').removeClass('current');
+    $('#list-s1').addClass('current').siblings('li').removeClass('current');
 
 }else if(y>=section2 && y<section3){
     //yがsection2以上かつsection3未満
     $('#list-2').addClass('current').siblings('li').removeClass('current');
+     $('#list-s2').addClass('current').siblings('li').removeClass('current');
 
 }else if(y>=section3 && y<section4){
     //yがsection3以上かつsection4未満
     $('#list-3').addClass('current').siblings('li').removeClass('current');
+    $('#list-s3').addClass('current').siblings('li').removeClass('current');
 
 }else if(y>=section4 && y<section5){
     //yがsection4以上かつsection5未満
     $('#list-4').addClass('current').siblings('li').removeClass('current');
+    $('#list-s4').addClass('current').siblings('li').removeClass('current');
 
 }else if(y>=section5 && y<section6){
     //yがsection5以上かつsection6未満
     $('#list-5').addClass('current').siblings('li').removeClass('current');
+    $('#list-s5').addClass('current').siblings('li').removeClass('current');
 
 }else if(y>=section6){
     //yがsection6以上
     $('#list-6').addClass('current').siblings('li').removeClass('current');
+    $('#list-s6').addClass('current').siblings('li').removeClass('current');
 }
 });
 
 
+
+const fullYear = new Date().getFullYear();
+if(fullYear >= 2025){
+$('#this-year').text('2024 - ' + fullYear);
+}else{
+$('#this-year').text(fullYear);
+}
 
 
 

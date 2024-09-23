@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felicaの課題まとめページ</title>
+    <link rel="apple-touch-icon" href="touch-icon.png" sizes="192x192">
+    <link rel="shortcut icon" href="favicon.png" sizes="60x60">
     <link rel="stylesheet" href="css/style.css">
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
 <script src="js/script.js"></script>
@@ -16,17 +18,30 @@
         <header>
             <h1>Felicaの課題まとめ</h1>
             <p>授業の課題を<br>時系列にまとめたページです</p>
-            <nav id="g-nav">
-                <ul>
-                    <li id="list-1"><a href="#month-1">1ヶ月目</a></li>
-                    <li id="list-2"><a href="#month-2">2ヶ月目</a></li>
-                    <li id="list-3"><a href="#month-3">3ヶ月目</a></li>
-                    <li id="list-4"><a href="#month-4">4ヶ月目</a></li>
-                    <li id="list-5"><a href="#month-5">5ヶ月目</a></li>
-                    <li id="list-6"><a href="#month-6">6ヶ月目</a></li>
-                </ul>
-            </nav>
+
+        <nav id="g-nav">
+            <ul>
+                <li id="list-1"><a href="#month-1">1ヶ月目</a></li>
+                <li id="list-2"><a href="#month-2">2ヶ月目</a></li>
+                <li id="list-3"><a href="#month-3">3ヶ月目</a></li>
+                <li id="list-4"><a href="#month-4">4ヶ月目</a></li>
+                <li id="list-5"><a href="#month-5">5ヶ月目</a></li>
+                <li id="list-6"><a href="#month-6">6ヶ月目</a></li>
+            </ul>
+        </nav>
         </header>
+
+        <div id="sp-nav">
+            <ul>
+                <li id="list-s1"><a href="#month-1">1ヶ月目</a></li>
+                <li id="list-s2"><a href="#month-2">2ヶ月目</a></li>
+                <li id="list-s3"><a href="#month-3">3ヶ月目</a></li>
+                <li id="list-s4"><a href="#month-4">4ヶ月目</a></li>
+                <li id="list-s5"><a href="#month-5">5ヶ月目</a></li>
+                <li id="list-s6"><a href="#month-6">6ヶ月目</a></li>
+            </ul>
+        </div>
+
         <main>
             <div class="main-visual">
                 <img src="img/main.webp" alt="">
@@ -132,10 +147,14 @@
 
     <div class="free">
         <p>ここはフリーペース</p>
+        
+   <div class="logo-box">
+    <img src="img/kadai-logo1.png" alt="">
+    </div><!-- logo-box -->
 
     </div><!-- /.free -->
     <footer>
-        <p><small>&copy; 2024 Rcoco7.github.io</small></p>
+        <p><small>&copy; <span id="this-year"></span> Rcoco7.github.io</small></p>
     </footer>
     
 </body>

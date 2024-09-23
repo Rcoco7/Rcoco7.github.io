@@ -150,11 +150,12 @@ main{
 
 
 footer{
-  height: 400px;
+  height: 70px;
   background-color: var(--color);
 }
 footer>p{
   text-align: center;
+  line-height: 60px;
 }
 
 
