@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIYOKO FACTORY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="../favicon.png">
+<link rel="stylesheet" href="../css/hamburgers.min.css">
+
+</head>
+<body>
+<header>
+  <h1>RIOKO FACTORY</h1>
+  <p class="tag-line">素肌に寄りそう、天然の贈り物</p>
+
+  <button class="hamburger hamburger--spin" type="button" id="ham-btn">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+
+  <nav id="sp-nav">
+    <ul>
+      <li><a href="../">Home</a></li>
+      <li><a href="../about/">About</a></li>
+      <li> <button id="sp-btn">Shop</button>
+        <div class="sub-menu" >
+        <ul>
+        <li><a href="../shop/">Products</a></li>
+        <li><a href="../customize/">Customize</a></li>
+        </ul>
+        </div><!-- /.sub-menu -->
+      </li>
+      <li><a href="../#news">News</a></li>
+      <li><a href="../#faq">FAQ</a></li>
+      <li><a href="../#accsess">Access</a></li>
+    </ul>
+  </nav><!-- /.g-nav -->
+
+  <p id="cart-sp"><a href="#"><img src="" alt=""></a></p>
+</header>
+<nav id="g-nav">
+  <p id="title"><a href="#"><img src="../img/logo-name.png" alt=""></a></p>
+  <ul>
+    <li><a href="../">Home</a></li>
+    <li><a href="../about/">About</a></li>
+    <li><a href="../shop/">Shop</a>
+      <div class="sub-menu">
+      <ul>
+      <li><a href="../shop/">Products</a></li>
+      <li><a href="../customize/">Customize</a></li>
+      </ul>
+      </div><!-- /.sub-menu -->
+    
+    </li>
+    <li><a href="../#news">News</a></li>
+    <li><a href="../#faq">FAQ</a></li>
+    <li><a href="../#accsess">Access</a></li>
+  </ul>
+    
+  <p id="cart"><a href="#"><img src="" alt=""></a></p>
+</nav><!-- /.g-nav -->
+
+<div id="visual"><img src="../img/form.webp" alt=""></div>
+
+
+<main>
+  <div class="form-wrapper">
+  <h2>購入ページ</h2>
+  <form class="my-form" action="データの送信先" method="送信方法">
+    <dl>
+      <dt>お名前<span>必須</span></dt>
+      <dd><input type="text" placeholder="お名前" required></dd>
+      <dt>メールアドレス<span>必須</span></dt>
+      <dd><input type="email"placeholder="〇〇〇＠〇〇〇.〇〇" required></dd>
+
+
+      <dt>電話番号 <span>必須</span></dt>
+      <dd>
+        <input type="tel" name="tel" autocomplete="tel" class="form-control" placeholder="00000000000" required>
+      </dd>
+
+      <dt>郵便番号 <span>必須</span></dt>
+      <dd>
+       <input type="text"name="postal-code"autocomplete="postal-code"class="form-control" placeholder="郵便番号" required>
+      </dd>
+        
+  
+
+
+      <dt>ご自宅住所 <span>必須</span></dt>
+       
+        <dd>
+          <input type="text" name="address-level1" autocomplete="address-level1" class="form-control" placeholder="都道府県" required>
+        </dd>
+
+
+        <dt></dt>
+        <dd>
+          <input type="text" name="address-level2" autocomplete="address-level2" class="form-control"placeholder="市区町村" required>
+        </dd>
+
+        <dt></dt>
+        <dd>
+          <input type="text"name="address-line1"autocomplete="address-line1"class="form-control" placeholder="番地等" required>
+        </dd>
+
+
+        <dt></dt>
+        <dd>
+        <input type="text" name="address-line2" autocomplete="address-line2" class="form-control" placeholder="建物名・部屋番号等">
+      </dd>
+
+
+      <dt>お支払方法<span>必須</span></dt>
+      <dd>
+      <label for="radio-btn">
+      <input type="radio" id="radio-btn" name="radio" checked required>クレジットカード
+      </label>
+
+      <label for="radio-btn2">
+      <input type="radio" id="radio-btn2" name="radio">コンビニ決済
+      </label>
+
+      <label for="radio-btn3">
+      <input type="radio" id="radio-btn3" name="radio">電子マネー決済
+      </label>
+
+      <label for="radio-btn4">
+      <input type="radio" id="radio-btn4" name="radio">代金引換（着払い）
+      </label>
+
+      <label for="radio-btn5">
+      <input type="radio" id="radio-btn5" name="radio">銀行ネット決済
+      </label>
+
+      </dd>
+
+      <dt>合計金額</dt>
+      <dd>￥0000</dd>
+
+ 
+
+      <dt>ご質問・ご要望</dt>
+      <dd>
+      <textarea placeholder="ご質問・ご要望を入力して下さい。"></textarea>
+      </dd>
+    </dl>
+
+    <input type="submit" value="入力内容の確認">
+    <input type="reset" value="リセット">
+  
+  </form>
+  </div><!-- /.form-wrapper -->    
+
+
+</main>
+
+
+<footer><p><small>&copy;<span id="this-year"></span>  RIYOKO FACTORY</small></p>
+<div class="sns">
+<a href="#"><img src="../img/line.svg" alt=""></a>
+<a href="#"><img src="../img/instagram.svg" alt=""></a>
+<a href="#"><img src="../img/x-twitter.svg" alt=""></a>
+</div>
+</footer>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+
+<script src="../js/script.js"></script>
+<script src="../js/vegas.js"></script>
+<script src="../js/jquery.bxslider.js"></script>
+
+    
+</body>
+</html>

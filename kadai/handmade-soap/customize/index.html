@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIYOKO FACTORY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../favicon.png">
+    <link rel="stylesheet" href="../css/hamburgers.min.css">
+    <link rel="stylesheet" href="../css/vegas.min.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <link rel="stylesheet" href="../css/select2.min.css">
+    <link rel="stylesheet" href="../css/aos.css">
+</head>
+<body>
+    <header>
+        <h1>RIOKO FACTORY</h1>
+        <p class="tag-line">素肌に寄りそう、天然の贈り物</p>
+
+        <button class="hamburger hamburger--spin" type="button" id="ham-btn">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+    <nav id="sp-nav">
+        <ul>
+            <li><a href="../">Home</a></li>
+            <li><a href="../about/">About</a></li>
+          <li> <button id="sp-btn">Shop</button>
+                <div class="sub-menu" >
+                <ul>
+                <li><a href="../shop">Products</a></li>
+                <li class="current"><a href="#">Customize</a></li>
+                </ul>
+                </div><!-- /.sub-menu -->
+            </li>
+            <li><a href="../#news">News</a></li>
+            <li><a href="../#faq">FAQ</a></li>
+            <li><a href="../#accsess">Access</a></li>
+        </ul>
+    </nav><!-- /.g-nav -->
+
+        <p id="cart-sp"><a href="../form/index.html"><img src="../img/cart.png" alt=""></a></p>
+
+
+
+    </header>
+    <nav id="g-nav">
+        <p id="title"><a href="#"><img src="../img/logo-name.png" alt=""></a></p>
+        <ul>
+            <li><a href="../">Home</a></li>
+            <li><a href="../about/">About</a></li>
+            <li><a href="../shop/">Shop</a>
+                 <div class="sub-menu">
+                <ul>
+                <li><a href="../shop/">Products</a></li>
+                <li class="current"><a href="#">Customize</a></li>
+                </ul>
+                </div><!-- /.sub-menu -->
+            
+            </li>
+            <li><a href="../#news">News</a></li>
+            <li><a href="../#faq">FAQ</a></li>
+            <li><a href="../#accsess">Access</a></li>
+        </ul>
+        
+        <p id="cart"><a href="../form/index.html"><img src="../img/cart.png" alt=""></a></p>
+    </nav><!-- /.g-nav -->
+
+    <div id="visual">
+    <img src="../img/customaize.webp" alt="">
+    </div>
+
+    <nav id="section-nav">
+    <ul>
+    <li><a href="../shop">Products</a></li>
+    <li class="current"><a href="#">Customize</a></li>
+    </ul>
+    </nav>
+
+    <main>
+        <div class="main-copy">
+            <h2>贈り物にも最適！心を込めたカスタマイズ石鹸</h2>
+            <p>大切な人への贈り物に、世界に一つの石鹸を贈ってみませんか？<br>好きな香り、好きな色、好きなデザインを選んで、心を込めたプレゼントを作ることができます。<br>結婚祝いや誕生日プレゼントなど、様々なシーンでご利用いただけます。<br>きっと、もらった人も喜んでくれるはずです。</p>
+        </div><!-- /.main-copy -->
+
+
+
+    <div id="order">
+    <h2>カスタマイズ</h2>
+    <p>オイルとエッセンシャルオイルをそれぞれ3種類まで自由に選んでいただけます。</p>
+    <div class="order-container">
+        <div class="oil-inner">
+        <h3>オイル</h3>
+        <select class="js-example-basic-multiple" name="states[]" multiple="multiple" style="min-width: 300px;">
+            <option value="A">AlmondOil</option>
+            <option value="A">AvocadoOil</option>
+            <option value="C">CamelliaOil</option>
+            <option value="C">CastorOil</option>
+            <option value="C">CoconutOil</option>
+            <option value="E">EveningPrimroseOil</option>
+            <option value="H">HazelnutOil</option>
+            <option value="M">MacadamianutOil</option>
+            <option value="O">OliveOil</option>
+            <option value="P">PalmOil</option>
+            <option value="S">SesameOil</option>
+            <option value="W">WaluntOil</option>
+        </select>
+        </div><!-- /.oil-inner -->
+
+        <div class="eo-inner">
+        <h3>エッセンシャルオイル</h3>
+            <select class="js-example-basic-multiple" name="states[]" multiple="multiple" style="min-width: 300px;">
+                <option value="T"disabled="disabled">トップノート</option>
+                <option value="T">Tea Tree</option>
+                <option value="T">Palmarosa</option>
+                <option value="T">Peppermint</option>
+                <option value="T">Orage Sweet</option>
+                <option value="T">Clary Sage</option>
+                <option value="T">Eucalyptus</option>
+                <option value="T">Lemongrass</option>
+                <option value="M"disabled="disabled">ミドルノート</option>
+                <option value="M">Geranium</option>
+                <option value="M">Juniper Berry</option>
+                <option value="M">Bergamot</option>
+                <option value="M">Marjoram</option>
+                <option value="M">Lavender</option>
+                <option value="M">Rosewood</option>
+                <option value="M">Rose Geranium</option>
+                <option value="M">Rosemary</option>
+                <option value="B"disabled="disabled">ベースノート</option>
+                <option value="B">Ylang Ylang</option>
+                <option value="B">Frankincens</option>
+                <option value="B">Chamomile</option>
+                <option value="B">Patcholi</option>
+                <option value="B">Clove Bud</option>
+            </select>
+        </div><!-- /.eo-inner -->
+
+        <div class="cart-inner">
+        <a href="../form/index.html"><img src="../img/cart.png" alt=""></a>
+        </div><!-- /.cart-inner -->
+        </div><!-- /.order-container -->
+    </div><!-- #order -->
+
+
+
+<div class="oil-wrapper">
+<h2>オイルの種類</h2>
+<div class="grid-container">
+
+<div class="oil-container">
+    <div class="img-box">
+    <img src="../img/oil/AlmondOil.webp" alt="">
+    </div><!-- /.img-box -->
+    <div class="oil-box">
+    <h3>AlmondOil</h3>
+    <p>肌の保護や柔軟効果も期待でき、赤ちゃんからお年寄りまで、幅広い年齢層の方にご使用いただけます。</p>
+    </div><!-- .oil-box -->
+</div><!-- /.oil-container -->
+
+<div class="oil-container">
+    <div class="img-box">
+    <img src="../img/oil/AvocadoOil.webp" alt="">
+    </div><!-- /.img-box -->
+    <div class="oil-box">
+    <h3>AvocadoOil</h3>
+    <p>肌への刺激が少なく、敏感肌の方や赤ちゃんにも安心して使えるマイルドな石鹸になります。</p>
+    </div><!-- .oil-box -->
+</div><!-- /.oil-container -->
+
+<div class="oil-container">
+    <div class="img-box">
+    <img src="../img/oil/CamelliaOil.webp" alt="">
+    </div><!-- /.img-box -->
+    <div class="oil-box">
+    <h3>CamelliaOil</h3>
+    <p>オレイン酸を豊富に含み、肌に潤いを長時間与え、しっとりとした洗い上がりを実現します。</p>
+    </div><!-- .oil-box -->
+</div><!-- /.oil-container -->
+
+<div class="oil-container">
+    <div class="img-box">
+    <img src="../img/oil/CastorOil.webp" alt="">
+    </div><!-- /.img-box -->
+    <div class="oil-box">
+    <h3>CastorOil</h3>
+    <p>豊かな泡立ちとしっとりとした洗い上がりが期待できます。</p>
+    </div><!-- .oil-box -->
+</div><!-- /.oil-container -->
+
+<div class="oil-container">
+    <div class="img-box">
+    <img src="../img/oil/CoconutOil.webp" alt="">
+    </div><!-- /.img-box -->
+    <div class="oil-box">
+    <h3>CoconutOil</h3>
+    <p>ココナッツオイルは泡立ちを良くする効果があり、豊かな泡で肌を優しく洗えます。</p>
+    </div><!-- .oil-box -->
+</div><!-- /.oil-container -->
+
+<div class="oil-container">
+    <div class="img-box">
+    <img src="../img/oil/EveningPrimroseOil.png" alt="">
+    </div><!-- /.img-box -->
+    <div class="oil-box">
+    <h3>EveningPrimroseOil</h3>
+    <p>乾燥肌や敏感肌の方におすすめのオイルです。特に、肌の炎症を抑えたい方や、バリア機能を強化したい方におすすめです。</p>
+    </div><!-- .oil-box -->
+</div><!-- /.oil-container -->
+
+<div class="oil-container">
+    <div class="img-box">
+    <img src="../img/oil/HazelnutOil.webp" alt="">
+    </div><!-- /.img-box -->
+    <div class="oil-box">
+    <h3>HazelnutOil</h3>
+    <p>抗酸化作用も期待できるため、肌の老化防止にも役立ちます。特に、乾燥肌や敏感肌の方におすすめです。</p>
+    </div><!-- .oil-box -->
+</div><!-- /.oil-container -->
+
+<div class="oil-container">
+    <div class="img-box">
+    <img src="../img/oil/MacadamianutOil.webp" alt="">
+    </div><!-- /.img-box -->
+    <div class="oil-box">
+    <h3>MacadamianutOil</h3>
+    <p>洗い上がりがしっとりとして、肌がつっぱりません。 保湿効果が高いため、乾燥肌の方におすすめです。</p>
+    </div><!-- .oil-box -->
+</div><!-- /.oil-container -->
+
+<div class="oil-container">
+    <div class="img-box">
+    <img src="../img/oil/OliveOil.webp" alt="">
+    </div><!-- /.img-box -->
+    <div class="oil-box">
+    <h3>OliveOil</h3>
+    <p>古くから美容に使われてきたオイルで、特に乾燥肌や敏感肌の方におすすめです。</p>
+    </div><!-- .oil-box -->
+</div><!-- /.oil-container -->
+
+<div class="oil-container">
+    <div class="img-box">
+    <img src="../img/oil/palmOil.webp" alt="">
+    </div><!-- /.img-box -->
+    <div class="oil-box">
+    <h3>PalmOil</h3>
+    <p>石鹸を硬くし、泡立ちを良くする効果があり、保湿効果も期待できます</p>
+    </div><!-- .oil-box -->
+</div><!-- /.oil-container -->
+
+<div class="oil-container">
+    <div class="img-box">
+    <img src="../img/oil/SesameOil.webp" alt="">
+    </div><!-- /.img-box -->
+    <div class="oil-box">
+    <h3>SesameOil</h3>
+    <p>古くから食用油として利用されてきただけでなく、その美容効果も高く評価されています。特に乾燥肌の方におすすめです。</p>
+    </div><!-- .oil-box -->
+</div><!-- /.oil-container -->
+
+<div class="oil-container">
+    <div class="img-box">
+    <img src="../img/oil/walnutOil.webp" alt="">
+    </div><!-- /.img-box -->
+    <div class="oil-box">
+    <h3>WalnutOil</h3>
+    <p>肌の再生を促し、健やかな肌へと導く効果が期待できるオイルです。特に乾燥肌や肌のターンオーバーが気になる方におすすめです。</p>
+    </div><!-- .oil-box -->
+</div><!-- .oil-container -->
+
+</div><!-- /.grid-container -->
+</div><!-- /.oil-wrapper -->
+
+
+
+
+<div class="eo-wrapper">
+<h2>エッセンシャルオイルの種類<br>
+3つのノートと7つの系統を組み合わせた香りの世界</h2>
+<p>エッセンシャルオイルのノートとは？<br>そのオイルが持つ香りの特徴を、揮発性の違いによって分類したものです。<br>まるで音楽の楽譜のように、香りの構成をイメージすることができます。</p>
+<p>エッセンシャルオイルの7系統とは？<br>
+エッセンシャルオイルは、植物から抽出した天然の芳香成分で、<br>その種類は多岐にわたります。これらを香りの特徴や成分などに基づいて分類すると、<br>一般的に7つの系統に分けられます。</p>
+
+<div class="system-container">
+
+<div class="summary">
+
+<div class="color-box" data-aos="fade-down-right" data-aos-delay="200">
+<p data-ex="木の香り">ウッディ系</p>
+</div><!-- /.color-box -->
+
+<div class="color-box" data-aos="fade-down" data-aos-delay="100">
+<p data-ex="花の香り">フローラル系</p>
+</div><!-- /.color-box -->
+
+<div class="color-box" data-aos="fade-down-left" data-aos-delay="200">
+<p data-ex="スパイスの香り">スパイス系</p>
+</div><!-- /.color-box -->
+</div><!-- /.summary -->
+
+<div class="summary-text" data-aos="zoom-in">
+<p>精油の香り７系統</p>
+</div><!-- /.summary-text -->
+
+<div class="summary-next">
+<div class="color-box" data-aos="fade-up-right" data-aos-delay="100">
+<p data-ex="柑橘系の香り">シトラス系</p>
+</div><!-- /.color-box -->
+
+<div class="color-box" data-aos="fade-up-right" data-aos-delay="200">
+<p data-ex="甘く濃厚な香り">樹脂系</p>
+</div><!-- /.color-box -->
+
+<div class="color-box" data-aos="fade-up-left" data-aos-delay="200">
+<p data-ex="オリエンタルな香り">エキゾチック系</p>
+</div><!-- /.color-box -->
+
+<div class="color-box" data-aos="fade-up-left" data-aos-delay="100">
+<p data-ex="ハーブの香り">ハーブ系</p>
+</div><!-- /.color-box -->
+
+</div><!-- /.summary-next -->
+</div><!-- /.system-container -->
+
+<div class="grid-top">
+
+<div class="eo-container">
+<h3>トップノート</h3>
+<div class="description">
+<p>トップノートは、最初に香る、軽やかで爽やかな印象の香りです。柑橘系やハーブ系の香りが代表的で、レモンやオレンジ、ペパーミントなどが挙げられます。このノートは、香りの第一印象を決定づけるため、ブレンドの顔とも言えます。揮発性が高いため、最初に香りますが、持続時間は比較的短いです。</p>
+</div><!-- /.description -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Tea Tree</h3>
+<div class="img-box">
+<img src="../img/eo/Tea-Tree.webp" alt="">
+<div class="caption">
+<p>ニキビや肌トラブルに悩んでいる方におすすめの精油です。殺菌作用や抗菌作用が高く、清潔で健やかな肌へと導きます。</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Palmarosa</h3>
+<div class="img-box">
+<img src="../img/eo/Palmarosa.webp" alt="">
+<div class="caption">
+<p>ニキビやオイリー肌に悩んでいる方におすすめの精油です。殺菌作用や皮脂分泌の調整作用が高く、清潔で健やかな肌へと導きます</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Peppermint</h3>
+<div class="img-box">
+<img src="../img/eo/Peppermint.webp" alt="">
+<div class="caption">
+<p>ニキビや頭皮のトラブルに悩んでいる方におすすめの精油です。爽快な使用感でリフレッシュできます</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Orage Sweet</h3>
+<div class="img-box">
+<img src="../img/eo/Orage-Sweet.webp" alt="">
+<div class="caption">
+<p>柑橘系の爽やかな香りで心身をリフレッシュさせ、肌に潤いを与える効果が期待できます</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Clary Sage</h3>
+<div class="img-box">
+<img src="../img/eo/Clary-Sage.webp" alt="">
+<div class="caption">
+<p>古くから薬草として利用されてきたハーブです。肌を引き締め、ホルモンバランスを整える効果が期待できます。</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Eucalyptus</h3>
+<div class="img-box">
+<img src="../img/eo/Eucalyptus.webp" alt="">
+<div class="caption">
+<p>殺菌作用や温感効果が期待できる、ニキビケアや冷え性対策に役立ちます</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Lemongrass</h3>
+<div class="img-box">
+<img src="../img/eo/Lemongrass.webp" alt="">
+<div class="caption">
+<p>殺菌作用やリフレッシュ効果が期待できて、ニキビケアやリフレッシュ効果が期待できます。</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+</div><!-- /.grid-top -->
+
+<div class="grid-middle">
+<div class="eo-container">
+<h3>ミドルノート</h3>
+<div class="description">
+<p>ミドルノートは、トップノートが落ち着き、香りの主体となる部分です。フローラル系やスパイシーな香りが多く、ラベンダーやローズ、シナモンなどが代表的です。このノートは、ブレンド全体の印象を大きく左右し、香りの深みを出します。</p>
+</div><!-- /.description -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Geranium</h3>
+<div class="img-box">
+<img src="../img/eo/Geranium.webp" alt="">
+<div class="caption">
+<p>心身に安らぎを与え、ストレスを軽減する効果があります。一日の疲れを癒し、リラックス効果を高めることができます。</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Juniper Berry</h3>
+<div class="img-box">
+<img src="../img/eo/Juniper-Berry.webp" alt="">
+<div class="caption">
+<p>古くから薬草として利用されてきた植物です。体の余分な水分を排出する利尿作用や、温感効果、様々な効能を持っています。</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Bergamot</h3>
+<div class="img-box">
+<img src="../img/eo/Bergamot.webp" alt="">
+<div class="caption">
+<p>柑橘系の爽やかな香りで知られています。気分転換、リラックス効果、そして肌のトラブル改善に役立つと言われています。</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Marjoram</h3>
+<div class="img-box">
+<img src="../img/eo/Marjoram.webp" alt="">
+<div class="caption">
+<p>穏やかな香りを持つハーブです。心身をリラックスさせ、肌の炎症を鎮める効果が期待できます。</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Lavender</h3>
+<div class="img-box">
+<img src="../img/eo/Lavender.webp" alt="">
+<div class="caption">
+<p>心身をリラックスさせ、肌を優しくいたわる効果が期待できる、穏やかなハーブです</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Rosewood</h3>
+<div class="img-box">
+<img src="../img/eo/Rosewood.webp" alt="">
+<div class="caption">
+<p>フローラルとウッディを感じさせる香りが特徴です。心身をリラックスさせ、肌の再生を促す効果が期待できます。</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Rose Geranium</h3>
+<div class="img-box">
+<img src="../img/eo/Rose-Geranium.webp" alt="">
+<div class="caption">
+<p>バラのような華やかな香りが特徴のハーブです。ホルモンバランスを整え、肌の再生を促す効果が期待できます。</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Rosemary</h3>
+<div class="img-box">
+<img src="../img/eo/Rosemary.webp" alt="">
+<div class="caption">
+<p>スパイシーな香りが、気分をリフレッシュさせます</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+</div><!-- /.grid-middle -->
+
+<div class="grid-base">
+<div class="eo-container">
+<h3>ベースノート</h3>
+<div class="description">
+<p>ベースノートは、最も揮発性が低く、香りが長く持続する部分です。ウッディ系やオリエンタル系の香りが多く、サンダルウッドやベチバー、パチュリなどが代表的です。このノートは、香りの基盤となり、ブレンドに落ち着きを与えます</p>
+</div><!-- /.description -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Ylang Ylang</h3>
+<div class="img-box">
+<img src="../img/eo/YlangYlang.webp" alt="">
+<div class="caption">
+<p>女性ホルモンのバランスを整え、肌のトラブルを改善する効果が期待できる精油です。ただし、妊娠中の方の使用は注意が必要です。</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Frankincens</h3>
+<div class="img-box">
+<img src="../img/eo/Frankincens.webp" alt="">
+<div class="caption">
+<p>肌の再生を促し、乾燥肌の改善に効果が期待できる精油です。また、リラックス効果も高いです</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Chamomile</h3>
+<div class="img-box">
+<img src="../img/eo/Chamomile.webp" alt="">
+<div class="caption">
+<p>古くからハーブとして親しまれてきた植物です。肌の炎症を鎮め、リラックス効果をもたらすことで知られています</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Patcholi</h3>
+<div class="img-box">
+<img src="../img/eo/Patcholi.webp" alt="">
+<div class="caption">
+<p>肌の再生を促し、乾燥肌の改善に効果が期待できる精油です。ただし、妊娠中の方の使用は注意が必要です。</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+
+<div class="eo-container">
+<h3>Clove Bud</h3>
+<div class="img-box">
+<img src="../img/eo/Clove-Bud.webp" alt="">
+<div class="caption">
+<p>その強い香りで知られるスパイスです。強力な殺菌作用や温感効果があり、スキンケアに幅広く利用されています。</p>
+</div><!-- /.caption -->
+</div><!-- /.img-box -->
+</div><!-- /.eo-container -->
+
+</div><!-- /.grid-base -->
+</div><!-- /.eo-wrapper -->
+
+
+</main>
+<footer><p><small>&copy;<span id="this-year"></span>  RIYOKO FACTORY</small></p>
+<div class="sns">
+<a href="#"><img src="../img/line.svg" alt=""></a>
+<a href="#"><img src="../img/instagram.svg" alt=""></a>
+<a href="#"><img src="../img/x-twitter.svg" alt=""></a>
+</div>
+</footer>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+
+<script src="../js/script.js"></script>
+<script src="../js/vegas.js"></script>
+<script src="../js/jquery.bxslider.js"></script>
+<script src="../js/select2.full.js"></script>
+<script src="../js/aos.js"></script>
+    
+</body>
+</html>

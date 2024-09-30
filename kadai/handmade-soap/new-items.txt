@@ -1,0 +1,36 @@
+
+
+<div id="wrapper-items">
+<div class="box">
+    <div class="item">
+        <img src="img/products/item1.webp" alt="">
+    </div><!-- /.item -->
+    <div class="text">
+        <h3></h3>
+        <p></p>
+    </div><!-- /.text -->
+</div><!-- /.box -->
+
+<div class="box">
+    <div class="item">
+        <img src="img/products/item2.webp" alt="">
+    </div><!-- /.item -->
+    <div class="text">
+        <h3></h3>
+        <p></p>
+    </div><!-- /.text -->
+</div><!-- /.box -->
+
+<div class="box">
+    <div class="item">
+        <img src="img/products/item3.webp" alt="">
+    </div><!-- /.item -->
+    <div class="text">
+        <h3></h3>
+        <p></p>
+    </div><!-- /.text -->
+</div><!-- /.box -->
+</div><!-- /.wrapper-items -->
+
+
+
