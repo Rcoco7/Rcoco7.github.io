@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【原神】ナタ LIVE MUSIC VIDEO（オーケストラ編成）</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div id="container">
+<div class="wrapper">
+
+<div class="pages">
+<h2>【原神】ナタ LIVE MUSIC VIDEO（オーケストラ編成）</h2>
+<div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/VN9ucWhXEm4?si=NzLXJvGkfGpkYbDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<p>この動画は、原神のゲームの曲「征け！全てを背負って」のミュージックビデオです。このビデオでは、長髪赤髪の決意に満ちた少女、ナタが主人公として登場します。この曲は、ナタが信念のために戦う旅を描いています。このビデオはアクションと感情に満ちており、キャラクターとゲームの精神を捉えています。
+</p>
+</div><!-- /.pages -->
+
+</div><!-- /.wrapper -->
+
+<a href="../page-2" id="next">次のページへ</a>
+
+</div><!-- /#container -->
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+
+<script src="js/jquery.clever-infinite-scroll.js"></script>
+
+<script>
+      //トップページへのリダイレクト
+      setTimeout("redirect()", 0);
+    function redirect(){
+    location.href='../index.html';
+    }
+
+
+    $('#container').cleverInfiniteScroll({
+    contentsWrapperSelector: '#container',
+    contentSelector: '.wrapper',
+    nextSelector: '#next',
+    });
+ 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery.clever-infinite-scroll</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+<div id="container">
+<div class="wrapper">
+<div class="fv">
+    <header>
+        <h1>jquery.clever-infinite-scroll</h1>
+    </header>
+    <div class="main-visual">
+        <img src="img/main.webp" alt="">
+    </div><!-- /.main-visual -->
+    <p class="lead">この無限スクロールはajaxを使って、スクロールする度に別のhtmlファイルにページ遷移するようになっています。<br>
+        通常はページ遷移する度にファイルを全て読み込む必要がありますが、ajaxを使うことでファイルの中の必要な部分だけ取得する事が出来るので、スムーズなページ遷移が可能になります。
+    </p>
+</div><!-- /.fv -->
+</div><!-- /.wrapper -->
+
+<a href="page-1/" id="next">次のページへ</a>
+<p class="to-top"><a href="#top"><img src="img/to-top.svg" alt=""></a></p>
+
+
+
+
+
+</div><!-- /#container -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+
+<script src="js/jquery.clever-infinite-scroll.js"></script>
+
+<script>
+    $('#container').cleverInfiniteScroll({
+    contentsWrapperSelector: '#container',
+    contentSelector: '.wrapper',
+    nextSelector: '#next',
+    });
+</script>
+
+
+</body>
+</html>

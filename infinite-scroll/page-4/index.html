@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【原神】スメールオーケストラ現場</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div id="container">
+<div class="wrapper">
+
+<div class="pages">
+<h2>【原神】スメールオーケストラ現場</h2>
+<div class="video-wrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WZ2FJxCILUE?si=UQzntn_YQmG1biYr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<p>ロンドン交響楽団による演奏: 世界的に有名なロンドン交響楽団が、原神の壮大な音楽を演奏します。オーケストラの迫力あるサウンドが、スメールの神秘的な雰囲気をさらに際立たせています。
+    伝統楽器とのコラボ: オーケストラに加え、伝統楽器のアーティストも参加。西洋音楽と東洋の伝統音楽が融合した、独特の響きが楽しめます。
+    スメール地域の映像: 演奏中に、原神のスメール地域の美しい風景やキャラクター、そして物語の重要なシーンなどが映し出されます。オーケストラの音楽とゲーム映像がシンクロし、視聴者に感動的な体験を提供します。
+</p>
+</div><!-- /.pages -->
+
+</div><!-- /.wrapper -->
+
+<a href="../page-5" id="next">次のページへ</a>
+
+</div><!-- /#container -->
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+
+<script src="js/jquery.clever-infinite-scroll.js"></script>
+
+<script>
+      //トップページへのリダイレクト
+      setTimeout("redirect()", 0);
+    function redirect(){
+    location.href='../index.html';
+    }
+
+
+    $('#container').cleverInfiniteScroll({
+    contentsWrapperSelector: '#container',
+    contentSelector: '.wrapper',
+    nextSelector: '#next',
+    });
+ 
+</script>
+
+</body>
+</html>
