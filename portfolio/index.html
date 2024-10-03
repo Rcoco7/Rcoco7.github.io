@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <style>
+        .fancybox-slide--iframe .fancybox-content {
+    width  : 800px;
+    height : 600px;
+    max-width  : 80%;
+    max-height : 100%;
+    margin: 0;
+}
+    </style>
+</head>
+<body id="top">
+    <header>
+        <h1>Portfolio</h1>
+        <nav id="g-nav">
+            <ul>
+                <li><a href="#top">Top</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#skill">Skill</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-visual">
+        <img src="" alt="">
+    </div><!-- /.main-visual -->
+    <main>
+        <section class="page-section" id="about">
+            <h2>About</h2>
+        </section>
+
+    
+        <section class="page-section" id="works">
+            <h2>Works</h2>
+            <div class="works-btn">
+                <button type="button" data-filter="all">全部</button>
+                <button type="button" data-filter=".html">HTML/CSS</button>
+                <button type="button" data-filter=".wp">WordPress</button>
+                <button type="button" data-filter=".photoshop">Photoshop/Illustrator</button>
+                <button type="button" data-filter=".js">JavaScript/jQuery</button>
+            </div><!-- /.works-btn -->
+
+
+            <div class="works-wrapper">
+
+                <div class="works-box mix wp video">
+                    <a href="javascript:;" data-fancybox data-type="iframe"data-src="site-1">
+                    <h3>日本の四季</h3>
+                    <p><img src="img/01.webp" alt=""></p>
+                    </a>
+                </div><!-- /.works-box -->
+
+                <div class="works-box mix html">
+                    <a href="javascript:;" data-fancybox data-type="iframe"data-src="site-2">
+                    <h3>百人一首</h3>
+                    <p><img src="img/02.webp" alt=""></p>
+                    </a>
+                </div><!-- /.works-box -->
+
+            
+                <div class="works-box mix wp">
+                    <a href="javascript:;" data-fancybox data-type="iframe"data-src="site-3">
+                    <h3>Net-Smart</h3>
+                    <p><img src="img/03.webp" alt=""></p>
+                    </a>
+                </div><!-- /.works-box -->
+
+                <div class="works-box mix video">
+                    <a href="javascript:;" data-fancybox data-type="iframe"data-src="site-4">
+                    <h3>splitレイアウト</h3>
+                    <p><img src="img/04.webp" alt=""></p>
+                    </a>
+                </div><!-- /.works-box -->
+
+        
+                <div class="works-box mix js">
+                    <a href="javascript:;" data-fancybox data-type="iframe"data-src="site-5">
+                    <h3>Handmade-soap</h3>
+                    <p><img src="img/05.webp" alt=""></p>
+                    </a>
+                </div><!-- /.works-box -->
+
+                <div class="works-box mix html">
+                    <a href="javascript:;" data-fancybox data-type="iframe"data-src="site-6">
+                    <h3>mobile-wp</h3>
+                    <p><img src="img/06.webp" alt=""></p>
+                    </a>
+                </div><!-- /.works-box -->
+
+
+            </div><!-- /.works-wrapper -->
+        </section>
+        
+        <section class="page-section" id="skill">
+            <h2>Skill</h2>
+        </section>
+    </main>
+    <footer><p><small>&copy;<span id="this-year"></span>Portfolio</small></p></footer>  
+</body>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script src="js/mixitup.js"></script>
+
+<script>
+    const mixer = mixitup('.works-wrapper')
+</script>
+
+
+
+
+
+
+</html>
