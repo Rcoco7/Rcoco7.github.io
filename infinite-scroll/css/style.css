@@ -36,6 +36,7 @@ h1{
     max-width: 600px;
     margin: 50px auto;
     line-height: 2;
+    font-size: 18px;
 }
 .to-top{
     width: 50px;
@@ -82,6 +83,11 @@ h1{
 
 footer{
 width: 100%;
-height: 50px;
+height: 100px;
 background-color: #000000;
+>p{
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+}
 }
