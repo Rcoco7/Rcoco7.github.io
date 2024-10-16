@@ -184,6 +184,8 @@ font-size: 20px;
 .kadai-list{
     padding: 50px 0 50px 50px;
     list-style: disc;
+    max-width: 680px;
+    margin: 0 auto;
     >li{
         margin-bottom: 20px;
         >a{
@@ -191,8 +193,10 @@ font-size: 20px;
             &:hover{
                 text-decoration: underline 2px;
                 font-weight: bold;
+                text-underline-offset: 3px;
             }
         }
+    
     }
 }
 
