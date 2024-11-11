@@ -78,6 +78,11 @@ h1{
   font-size: 34px;
   line-height: 3;
   border-top: 10px solid #fcfaf2;
+  @media (640px >= width){
+    min-height: 50vh;
+    font-size: 28px;
+    line-height: 2;
+  }
 }
 h2{
   font-size: 26px;
