@@ -108,9 +108,15 @@ h1{
   line-height: 3;
   border-top: 10px solid #fcfaf2;
   @media (640px >= width){
+<<<<<<< HEAD
   min-height: 50vh;
   font-size: 28px;
   line-height: 2;
+=======
+    min-height: 50vh;
+    font-size: 28px;
+    line-height: 2;
+>>>>>>> 39bc4603f6c49aad4e403863cdef760e4a82f356
   }
 }
 h2{
